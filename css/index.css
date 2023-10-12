@@ -27,6 +27,10 @@ header {
     font-size: 15px;
 }
 
+#menuHome{
+    color: #006D77;
+}
+
 a:visited {
     color: black;
 }
