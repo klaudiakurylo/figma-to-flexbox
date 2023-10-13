@@ -1,6 +1,3 @@
-#container {
-    background-color: aqua;
-}
 
 button {
     cursor: pointer;
@@ -166,4 +163,36 @@ section #upSectionText {
 #imgWorkers {
     margin-top: 70px;
     margin-left: -300px;
+}
+
+
+#ClientLogoDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    gap: 30px ;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+#ClientLogoDiv > div {
+    border-style: none;
+}
+
+.topLogo {
+    margin-top: 100px;
+}
+
+.bottomLogo {
+    margin-top: -20px;
+}
+
+#freshIdeas {
+    width: 100%;
+    height: 350px;
 }
