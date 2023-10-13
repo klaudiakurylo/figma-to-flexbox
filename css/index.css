@@ -2,8 +2,12 @@
     background-color: aqua;
 }
 
+button {
+    cursor: pointer;
+}
+
 header {
-    
+
     display: flex;
     padding: 20px;
     justify-content: space-between;
@@ -27,7 +31,7 @@ header {
     font-size: 15px;
 }
 
-#menuHome{
+#menuHome {
     color: #006D77;
 }
 
@@ -52,10 +56,114 @@ a:visited {
     font-size: 15px;
 }
 
-.arrow-small-right {
+.arrow-r-black,
+.arrow-r-white {
     margin-bottom: -5px;
 }
 
 .menu-burger {
     margin-bottom: -5px;
+}
+
+section #upSectionText {
+    height: 532px;
+    display: block;
+    background-color: #BEE1E6;
+    width: 50%;
+    float: left;
+}
+
+#DMAbutton {
+    margin-top: 80px;
+    margin-left: 130px;
+    background-color: #006D77;
+    border-radius: 16px;
+    color: white;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    border-style: none;
+}
+
+#header1 {
+    font-size: 50px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    width: 656px;
+    height: 144px;
+    padding: 40px;
+    padding-bottom: 0px;
+    margin-left: 90px;
+}
+
+#upSecText {
+    padding-bottom: 40px;
+    margin-left: 135px;
+    width: 600px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#getStartedBtn-black {
+    padding: 20px 32px;
+    margin-left: 135px;
+    color: white;
+    background-color: #030303;
+    border-radius: 8px;
+    border-style: none;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#howItWorksBtn {
+    padding: 20px 32px;
+    margin-left: 70px;
+    border-radius: 8px;
+    border-style: none;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    border-color: #006D77;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #BEE1E6;
+}
+
+#upSectionImg {
+    height: 532px;
+    display: block;
+    background-color: #BEE1E6;
+    width: 50%;
+    float: right;
+}
+
+#waveSvg {
+    background-color: white;
+    overflow: hidden;
+    width: 184px;
+    padding-top: 60px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    margin-left: -390px;
+}
+
+#frameSvg {
+    margin-left: 400px;
+    margin-bottom: -10px;
+}
+
+#imgWorkers {
+    margin-top: 70px;
+    margin-left: -300px;
 }
