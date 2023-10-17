@@ -1,4 +1,3 @@
-
 button {
     cursor: pointer;
 }
@@ -70,7 +69,7 @@ section #upSectionText {
     float: left;
 }
 
-#DMAbutton {
+#DMAbuttonDark {
     margin-top: 80px;
     margin-left: 130px;
     background-color: #006D77;
@@ -90,7 +89,7 @@ section #upSectionText {
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Bitter', serif;
     font-family: 'Roboto', sans-serif;
-    width: 656px;
+    width: 490px;
     height: 144px;
     padding: 40px;
     padding-bottom: 0px;
@@ -138,49 +137,63 @@ section #upSectionText {
 }
 
 #upSectionImg {
+    position: relative;
     height: 532px;
     display: block;
     background-color: #BEE1E6;
     width: 50%;
     float: right;
+    /* VARIABLES - imgWorkers is a base */
+    --ImgMarginLeft: 300px;
+    --ImgMarginTop: 60px
+}
+
+#imgWorkers {
+    position: absolute;
+    z-index: 2;
+    margin-left: var(--ImgMarginLeft);
+    margin-top: var(--ImgMarginTop);
 }
 
 #waveSvg {
+    position: absolute;
+    z-index: 3;
     background-color: white;
     overflow: hidden;
     width: 184px;
     padding-top: 60px;
     border-radius: 18px;
-    margin-bottom: 20px;
-    margin-left: -390px;
+    margin-left: calc(var(--ImgMarginLeft) - 50px);
+    margin-top: calc(var(--ImgMarginTop) + 200px);
+
 }
 
 #frameSvg {
-    margin-left: 400px;
-    margin-bottom: -10px;
-}
-
-#imgWorkers {
-    margin-top: 70px;
-    margin-left: -300px;
+    position: absolute;
+    z-index: 1;
+    margin-left: calc(var(--ImgMarginLeft) - 30px);
+    margin-top: calc(var(--ImgMarginTop) + 20px);
 }
 
 
-#ClientLogoDiv{
+
+
+#ClientLogoDiv {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
     height: 350px;
-    gap: 30px ;
+    gap: 30px;
 }
+
 .break {
     flex-basis: 100%;
     height: 0;
 }
 
-#ClientLogoDiv > div {
+#ClientLogoDiv>div {
     border-style: none;
 }
 
@@ -192,7 +205,111 @@ section #upSectionText {
     margin-top: -20px;
 }
 
-#freshIdeas {
+#bottomLine {
     width: 100%;
-    height: 350px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#freshIdeas {
+    background-color: red;
+
+}
+
+#mainSectionImg {
+    position: relative;
+    width: 60%;
+    height: 650px;
+    float: left;
+    /*VARIABLES HighFiveImg is a base*/
+    --MarginTopHigh: 40px;
+    --MarginLeftHigh: 130px;
+}
+
+#HighFiveImg {
+    position: absolute;
+    z-index: 1;
+    margin-top: var(--MarginTopHigh);
+    margin-left: var(--MarginLeftHigh);
+
+}
+
+#ChartsImg {
+    position: absolute;
+    border-radius: 16px;
+    z-index: 2;
+    margin-top: calc(var(--MarginTopHigh) + 325px);
+    margin-left: calc(var(--MarginLeftHigh) + 450px);
+}
+
+
+#mainSectionText {
+    display: block;
+    width: 40%;
+    height: 600px;
+    float: right;
+}
+
+#DMAbuttonBright {
+    background-color: #BEE1E6;
+    border-radius: 16px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    border-style: none;
+    margin-top: 40px;
+}
+
+#header2 {
+    font-size: 37px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    width: 600px;
+    height: 100px;
+    padding: 40px 40px 0 0;
+    padding-bottom: 0;
+
+}
+
+#mainSecText {
+    width: 500px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0px 40px 0 0;
+}
+
+.nameOpinion {
+    font-size: 20px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0px;
+}
+
+.opinion {
+    width: 420px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 15px;
+    word-spacing: 2.5px;
+    margin-left: 57px;
+    text-align: justify;
 }
