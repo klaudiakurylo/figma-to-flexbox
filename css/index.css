@@ -96,7 +96,7 @@ section #upSectionText {
     margin-left: 90px;
 }
 
-#upSecText {
+.mainText {
     padding-bottom: 40px;
     margin-left: 135px;
     width: 600px;
@@ -175,9 +175,6 @@ section #upSectionText {
     margin-top: calc(var(--ImgMarginTop) + 20px);
 }
 
-
-
-
 #ClientLogoDiv {
     display: flex;
     justify-content: center;
@@ -212,8 +209,7 @@ section #upSectionText {
 }
 
 #freshIdeas {
-    background-color: red;
-
+    height: 650px;
 }
 
 #mainSectionImg {
@@ -250,7 +246,7 @@ section #upSectionText {
     float: right;
 }
 
-#DMAbuttonBright {
+.DMAbuttonBright {
     background-color: #BEE1E6;
     border-radius: 16px;
     font-family: 'AR One Sans', sans-serif;
@@ -262,7 +258,7 @@ section #upSectionText {
     margin-top: 40px;
 }
 
-#header2 {
+.header2 {
     font-size: 37px;
     font-family: 'AR One Sans', sans-serif;
     font-family: 'Bebas Neue', sans-serif;
@@ -275,7 +271,7 @@ section #upSectionText {
 
 }
 
-#mainSecText {
+.mainSecText {
     width: 500px;
     font-family: 'AR One Sans', sans-serif;
     font-family: 'Bebas Neue', sans-serif;
@@ -312,4 +308,106 @@ section #upSectionText {
     word-spacing: 2.5px;
     margin-left: 57px;
     text-align: justify;
+}
+
+#CenteredTextSection {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#HeaderCentered {
+    font-size: 37px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+#TextCentered {
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 600px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#RowOpinionSection {
+    display: flex;
+    height: 250px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 150px;
+
+    .opinion {
+        width: 300px;
+    }
+}
+
+#TLCText {
+    background-color: #deeff3;
+    width: 60%;
+    float: left;
+    height: 550px;
+
+    .DMAbuttonBright {
+        margin-left: 120px;
+        box-shadow: 0px 3px 8px 1px rgb(206, 206, 206);
+    }
+
+    .header2 {
+        width: 650px;
+        margin-left: 120px;
+    }
+
+    .mainSecText {
+        width: 700px;
+        margin-left: 120px;
+    }
+}
+
+#TLCOpinions {
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 20px;
+
+    .opinion {
+        width: 270px;
+    }
+}
+
+#TLCImg {
+    background-color: #deeff3;
+    position: relative;
+    width: 40%;
+    float: right;
+    height: 550px;
+
+    /*VARIABLES EmptyDeskImg is a base*/
+    --MarginTopDesk: 40px;
+    --MarginLeftDesk: 50px;
+}
+
+#EmptyDeskImg {
+    position: absolute;
+    z-index: 1;
+    margin-top: var(--MarginTopDesk);
+    margin-left: var(--MarginLeftDesk);
+}
+
+#WomanImg {
+    position: absolute;
+    z-index: 2;
+    margin-left: calc(var(--MarginLeftDesk) + 280px);
+    margin-top: calc(var(--MarginTopDesk) + 280px);
 }
