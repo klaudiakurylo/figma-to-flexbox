@@ -353,6 +353,12 @@ section #upSectionText {
     }
 }
 
+#TLCSection {
+    height: 550px;
+    border: none;
+    box-shadow: 0px 3px 8px 1px rgb(206, 206, 206);
+}
+
 #TLCText {
     background-color: #deeff3;
     width: 60%;
@@ -410,4 +416,70 @@ section #upSectionText {
     z-index: 2;
     margin-left: calc(var(--MarginLeftDesk) + 280px);
     margin-top: calc(var(--MarginTopDesk) + 280px);
+}
+
+#LinkSection {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    height: 380px;
+}
+
+.LinksList {
+    width: 300px;
+    height: 250px;
+    margin-top: 80px;
+
+    .opinion {
+        margin-left: 10px;
+        padding-top: 20px;
+        width: 250px;
+    }
+
+    .nameOpinion {
+        padding: 10px;
+    }
+}
+
+::marker {
+    content: '';
+}
+
+.LiFont {
+    font-size: 15px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    color: #929292;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.LinksList a {
+    text-decoration: none;
+    color: #929292;
+}
+
+.LinksList a:visited {
+    color: #929292;
+}
+
+.ArrowRight {
+    margin-bottom: -2px;
+}
+
+#CopyrightSection {
+    background-color: #006D77;
+    height: 100px;
+    font-size: 15px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
